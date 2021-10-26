@@ -6,7 +6,7 @@ jobs:
       - checkout
       - run:
           command: >
-            echo "First Workflow"
+            echo "First Workflow succesfull"
   test:
     docker:
       - image: cimg/node:17.0.1
@@ -14,7 +14,7 @@ jobs:
       - checkout
       - run:
           command: >
-            echo "Second Workflow"
+            echo "Second Workflow succesfull"
 workflows:
   version: 2
   build_and_test:
